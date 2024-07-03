@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.panel-item__text_done {
+    text-decoration: line-through;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+}
+
+.panel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.panel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.panel-item__text {
+    flex: 1;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.panel-item__text_done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.panel-item__edit,
+.panel-item__delete {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    outline: none;
+    padding: 16px;
+    text-transform: capitalize;
+}
+
+.panel-item__delete {
+    background-color: #dc3545;
+}
+
+.panel-item__edit:hover,
+.panel-item__delete:hover {
+    opacity: 0.8;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.add-todo-button,
+.panel-clear {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.panel-clear {
+    background-color: #ff5733;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-todo-button:hover,
+.panel-clear:hover {
+    opacity: 0.8;
+}
